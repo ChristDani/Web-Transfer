@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size:16px;
+    background:#fff;
+    margin:0;
+    color:#000;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color:inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+input, button {
+    display: block;
+}

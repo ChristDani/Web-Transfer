@@ -1,0 +1,18 @@
+//theme
+@import "theme/colors";
+//config
+@import "config/vars";
+@import "config/mixins";
+
+//base
+@import "base/base";
+
+//layouts
+@import "layouts/layouts";
+
+//componentes
+@import "componentes/header";
+@import "componentes/main";
+@import "componentes/imagen";
+@import "componentes/formularioLogin";
+@import "componentes/footer";

@@ -1,0 +1,64 @@
+.l-container,
+[class*="l-container--"] {
+    width: 95%;
+    max-width: 1300px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:1rem 0;
+}
+
+.l-container--full {
+    max-width:100%;
+}
+
+.l-container--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-container--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-section {
+    padding:1.5rem 0;
+
+        &::before {
+            margin-right: 10px;
+            color:$greenColor;
+        }
+}
+
+
+[class*="grid--"] {
+
+    --grid-columns: repeat(2, 1fr);
+    --grid-gap: 1.6rem 1.4rem;
+    display: grid;
+    grid-template-columns: var(--grid-columns);
+    // grid-gap:var(--grid-gap);
+    gap: var(--grid-gap);
+
+    @include from(medium) {
+        --grid-columns:repeat(3, 1fr);
+    }
+
+    @include from(large) {
+        --grid-columns:repeat(4, 1fr);
+    }
+}
+
+.grid--chapters {
+    @include from(x-large) {
+        --grid-columns:repeat(5, 1fr);
+    }
+}
+
+.grid--series {
+    @include from(x-large) {
+        --grid-columns:repeat(6, 1fr);
+    }
+}

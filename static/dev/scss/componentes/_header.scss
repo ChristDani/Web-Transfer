@@ -1,0 +1,10 @@
+.Header {
+    background-color:#00437a;
+    color:#fff;
+
+    @include from(x-large) {
+        position: absolute;
+        width:100%;
+        background-color:transparent;
+    }
+}

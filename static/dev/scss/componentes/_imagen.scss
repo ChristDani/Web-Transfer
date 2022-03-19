@@ -1,0 +1,8 @@
+.Imagen {
+    @include from(x-large) {
+        width: 50%;
+        height: 100vh;
+        background-image: url("../img/lap.jpg");
+        background-size:cover ;
+    }
+}

@@ -1,0 +1,12 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+
+    @include from(x-large) {
+        position: absolute;
+        bottom: 0;
+        width:100%;
+        color:#000;
+        justify-content: flex-start;
+    }
+}
