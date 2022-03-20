@@ -1,1 +1,193 @@
-:root{--firstColor:#282248;--secondColor:#1f1a3a;--body:#18142f;--textColor:#fff;--blueColor:#41a6ff;--darkColor:#18142f;--greenColor:#37d1a2}*,:after,:before{box-sizing:border-box}body{background:#fff;color:#000;font-size:16px;margin:0}img{display:block;max-width:100%}a{color:inherit}h1,h2,h3,h4,h5,h6{margin:0}button,input{display:block}.l-container,[class*=l-container--]{margin-left:auto;margin-right:auto;max-width:1300px;padding:1rem 0;width:95%}.l-container--full{max-width:100%}.l-container--row{align-items:center;display:flex;justify-content:space-between}.l-container--column{align-items:center;display:flex;flex-direction:column}.title-section{padding:1.5rem 0}.title-section:before{color:#37d1a2;margin-right:10px}[class*=grid--]{--grid-columns:repeat(2,1fr);--grid-gap:1.6rem 1.4rem;display:grid;gap:var(--grid-gap);grid-template-columns:var(--grid-columns)}@media screen and (min-width:572px){[class*=grid--]{--grid-columns:repeat(3,1fr)}}@media screen and (min-width:772px){[class*=grid--]{--grid-columns:repeat(4,1fr)}}@media screen and (min-width:1010px){.grid--chapters{--grid-columns:repeat(5,1fr)}.grid--series{--grid-columns:repeat(6,1fr)}}.Header{background-color:#00437a;color:#fff}@media screen and (min-width:1010px){.Header{background-color:transparent;position:absolute;width:100%}.Main--login{display:flex;justify-content:space-between}.Imagen{background-image:url(../img/lap.jpg);background-size:cover;height:100vh;width:50%}}.FormularioLogin{padding:1rem .8rem}@media screen and (min-width:772px){.FormularioLogin{margin-left:auto;margin-right:auto;width:40%}}@media screen and (min-width:1010px){.FormularioLogin{display:flex;flex-direction:column;justify-content:center;width:30%}}.FormularioLogin__button,.FormularioLogin__input,.FormularioLogin__title{margin-bottom:.8rem}.FormularioLogin__button,.FormularioLogin__input{border:2px solid #222;border-radius:12px;outline:0;padding:.6rem .4rem;width:100%}.FormularioLogin__button:focus,.FormularioLogin__input:focus{border:2px solid #4682b4}.FormularioLogin__button{background-color:transparent;cursor:pointer}.Footer{display:flex;justify-content:center}@media screen and (min-width:1010px){.Footer{bottom:0;color:#000;justify-content:flex-start;position:absolute;width:100%}}
+:root {
+  --firstColor: #282248;
+  --secondColor: #1f1a3a;
+  --body: #18142f;
+  --textColor: #fff;
+  --blueColor: #41a6ff;
+  --darkColor: #18142f;
+  --greenColor: #37d1a2;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+button,
+input {
+  display: block;
+}
+.l-container,
+[class*="l-container--"] {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  padding: 1rem 0;
+  width: 95%;
+}
+.l-container--full {
+  max-width: 100%;
+}
+.l-container--row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.l-container--column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.title-section {
+  padding: 1.5rem 0;
+}
+.title-section:before {
+  color: #37d1a2;
+  margin-right: 10px;
+}
+[class*="grid--"] {
+  --grid-columns: repeat(2, 1fr);
+  --grid-gap: 1.6rem 1.4rem;
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: var(--grid-columns);
+}
+@media screen and (min-width: 572px) {
+  [class*="grid--"] {
+    --grid-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 772px) {
+  [class*="grid--"] {
+    --grid-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1010px) {
+  .grid--chapters {
+    --grid-columns: repeat(5, 1fr);
+  }
+  .grid--series {
+    --grid-columns: repeat(6, 1fr);
+  }
+}
+.Header {
+  background-color: #00437a;
+  color: #fff;
+}
+@media screen and (min-width: 1010px) {
+  .Header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+  }
+  .Main--login {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Imagen {
+    background-image: url(../img/lap.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+  }
+}
+.FormularioLogin {
+  padding: 1rem 0.8rem;
+  width: 70%;
+}/* 
+.FormularioLogin label{
+    position: relative;
+} */
+.FormularioLogin label span{
+    position: relative;
+    bottom: -1.7rem;
+    left: 2rem;
+    color: #8e97a0;
+}
+span.active{
+    top: 0;
+    left: 1rem;
+    color: #000;
+}
+.form__container{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+@media screen and (min-width: 772px) {
+    .FormularioLogin {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    }
+}
+@media screen and (min-width: 1010px) {
+    .form__container{
+        margin: auto;
+        width: 50%;
+    }
+  .FormularioLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+}
+.FormularioLogin__button,
+.FormularioLogin__input,
+.FormularioLogin__title {
+  margin-bottom: 0.8rem;
+}
+.FormularioLogin__title{
+    text-align: center;
+}
+.FormularioLogin__button,
+.FormularioLogin__input {
+  border: 2px solid #222;
+  border-radius: 12px;
+  outline: 0;
+  padding: 0.6rem 0.4rem;
+  width: 100%;
+}
+.FormularioLogin__button:focus,
+.FormularioLogin__input:focus {
+  border: 2px solid #4682b4;
+}
+.FormularioLogin__button {
+  background-color: transparent;
+  cursor: pointer;
+}
+.Footer {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1010px) {
+  .Footer {
+    bottom: 0;
+    color: #000;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+  }
+}

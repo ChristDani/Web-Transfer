@@ -15,12 +15,20 @@
     </header>
     <main class="Main--login">
         <div class="Imagen"></div>
-        <form action="" class="FormularioLogin">
+        <div class="form__container">
             <h2 class="FormularioLogin__title">Inicio de sesion</h2>
-            <input class="FormularioLogin__input" type="text" name="usuario" id="usuario" placeholder="Ingresa tu usuario">
-            <input class="FormularioLogin__input" type="password" name="password" id="password" placeholder="Ingresa tu usuario">
-            <button class="FormularioLogin__button" type="submit">Ingresar</button>
-        </form>
+            <form action="" class="FormularioLogin">
+                <label for="usuario">
+                    <span id="subir">Ingresa tu usuario</span>
+                    <input class="FormularioLogin__input" type="text" name="usuario" id="usuario">
+                </label>
+                <label for="password">
+                    <span id="subir">Ingresa tu contraseña</span>
+                    <input class="FormularioLogin__input" type="password" name="password" id="password">
+                </label>
+                <input class="FormularioLogin__button" type="submit" value="Ingresar">
+            </form>
+        </div>
     </main>
     <footer class="Footer">
         Web-Transfer@futuros-senatinos
