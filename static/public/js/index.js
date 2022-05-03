@@ -1,2 +1,7 @@
-let activar = document.getElementById('subir')
-activar.classList.toggle('active')
+let cajaInput = document.querySelectorAll('input')
+cajaInput.map(item => {
+    item.addEventListener(click, ()=> {
+        item.classList.add('active')
+    })
+})
+

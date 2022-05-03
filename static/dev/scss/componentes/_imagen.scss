@@ -1,8 +1,8 @@
-.Imagen {
-    @include from(x-large) {
+.Imagen{
+    @include from($xlarge){
+        background-image: url("../img/lap.jpg");
         width: 50%;
         height: 100vh;
-        background-image: url("../img/lap.jpg");
-        background-size:cover ;
+        background-size: cover;
     }
 }

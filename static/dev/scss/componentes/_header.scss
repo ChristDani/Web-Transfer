@@ -1,10 +1,11 @@
-.Header {
-    background-color:#00437a;
-    color:#fff;
-
-    @include from(x-large) {
+.Header{
+    background-color: $firstColor;
+    @include from($xlarge){
+        background-color: transparent;
         position: absolute;
-        width:100%;
-        background-color:transparent;
+        width: 100%;
     }
+    &__logo{
+        color: $textColor;
+    } 
 }
