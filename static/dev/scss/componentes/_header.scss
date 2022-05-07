@@ -1,11 +1,24 @@
-.Header{
-    background-color: $firstColor;
-    @include from($xlarge){
-        background-color: transparent;
-        position: absolute;
-        width: 100%;
+.Header {
+  background-color: $firstColor;
+  @include from($xlarge) {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+  }
+  &__logo {
+    color: $textColor;
+  }
+  &__menu {
+    padding: 0.8rem 0.5rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 0.5rem;
+    @include from($medium) {
+      display: none;
     }
-    &__logo{
-        color: $textColor;
-    } 
+  }
+}
+
+.Header--home {
+  background-color: $firstColor;
 }
