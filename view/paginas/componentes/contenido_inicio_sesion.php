@@ -15,6 +15,7 @@
                 </label>
 
                 <input class="form__container__button" type="submit" value="Entrar">
+                <small>¿No tienes una cuenta? <a href="index.php?pagina=registro" class="form__container__small">Registrate</a></small>
             </form>
         </div>
 </main>

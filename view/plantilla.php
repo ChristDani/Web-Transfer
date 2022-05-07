@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="view/css/styles.css">
 </head>
 <body>
-    <?php  include_once"paginas/login.php"?>
+    <?php
+    if (isset($_GET["pagina"])) 
+    {
+    
+        if($_GET["pagina"]==="registro")
+        {
+
+            include_once"paginas/registro.php";
+
+        }
+        elseif ($_GET["pagina"]==="login") 
+        {
+            include_once"paginas/login.php";
+        }
+        
+    }
+    else
+    {
+        
+        include_once"paginas/login.php";
+
+    }
+        ?>
 </body>
 </html>
