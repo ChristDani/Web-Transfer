@@ -2,7 +2,7 @@
         <div class="Imagen"></div>
         <div class="form__container">
             <h2 class="form__container__title">Inicio de Sesion</h2>
-            <form action="" method="post" class="form__container">
+            <form action="controller/acceso/login.php" method="post" class="form__container">
 
                 <label for="dni">
                     <span id="subir">Ingresa tu DNI</span>

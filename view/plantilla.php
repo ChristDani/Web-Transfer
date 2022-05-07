@@ -22,11 +22,15 @@
         {
             include_once"paginas/login.php";
         }
+        elseif ($_GET["pagina"]==="home") 
+        {
+            include_once"paginas/home.php";
+        }
         
     }
     else
     {
-        
+
         include_once"paginas/login.php";
 
     }
