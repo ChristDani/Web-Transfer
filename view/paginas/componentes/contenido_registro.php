@@ -16,7 +16,7 @@
 
                 <label for="dni">
                     <span id="subir">Ingresa tu DNI</span>
-                    <input class="form__container__input" type="text" name="dni" id="dni" required>
+                    <input class="form__container__input" type="text" name="dni" id="dni" required maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
                 </label>
 
                 <label for="sexo">
@@ -35,7 +35,7 @@
 
                 <label for="clave">
                     <span id="subir">Ingresa tu Clave</span>
-                    <input class="form__container__input" type="password" name="clave" id="clave" maxlength="6" required>
+                    <input class="form__container__input" type="password" name="clave" id="clave" maxlength="6" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
                 </label>
 
                 <input class="form__container__button" type="submit" value="Registrar">
