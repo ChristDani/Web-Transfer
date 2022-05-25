@@ -5,9 +5,3 @@
         </button>
     </div>
 </main>
-<scrip>
-    function pagina_inicio()
-    {
-        location.href="../../controller/acceso/logout.php";
-    }
-</scrip>

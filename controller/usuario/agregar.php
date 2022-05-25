@@ -9,7 +9,7 @@
     $clave=$_POST['clave'];
     
     $consultas=new user();
-    $filas2=$consultas->insertarUsuario($nombre,$apellido,$dni,$sexo,$correo,$clave);
+    $consultas->insertarUsuario($nombre,$apellido,$dni,$sexo,$correo,$clave);
 
     $_SESSION["user"]=$nombre;
 	session_start();

@@ -19,6 +19,13 @@ class op
 
     }
     
+    public function listarOperacion()
+    {
+
+
+        
+    }
+
 }
 
 ?>

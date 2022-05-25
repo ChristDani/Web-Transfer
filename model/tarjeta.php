@@ -21,6 +21,13 @@ class tarjeta
 
     }
     
+    public function listarTarjeta()
+    {
+
+
+        
+    }
+    
 }
 
 ?>
