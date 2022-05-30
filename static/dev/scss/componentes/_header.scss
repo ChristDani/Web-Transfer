@@ -1,5 +1,6 @@
 .Header {
   background-color: $firstColor;
+  padding: 2rem;
   @include from($xlarge) {
     background-color: transparent;
     position: absolute;
@@ -9,16 +10,35 @@
     color: $textColor;
   }
   &__menu {
-    padding: 0.8rem 0.5rem;
+    padding: 1rem;
     cursor: pointer;
     background-color: white;
     border-radius: 0.5rem;
+    color: $textColor;
     @include from($medium) {
       display: none;
+    }
+  }
+  &__bienvenida {
+    text-align: center;
+    margin-top: 1.5rem;
+    .Informacion__item{
+      margin-top: 1.5rem;
+    }
+    @include from($medium) {
+      .Informacion__cuenta{
+        display: flex;
+        justify-content: space-around;
+      }
     }
   }
 }
 
 .Header--home {
   background-color: $firstColor;
+  color: $textColorLight;
+  position: static;
+  .Header__logo {
+    color: $textColorLight;
+  }
 }

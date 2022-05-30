@@ -5,50 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/00ec2580a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
+    />
   </head>
   <body>
-    <header class="Header--home">
+    <header class="Header Header--home">
       <div class="l-container--row">
         <h1 class="Header__logo">Logo</h1>
-        <div class="Header__menu">
-            menu
+        <div class="Header__menu" id="btn_nav">
+          <i class="fa-solid fa-bars"></i>
         </div>
-        <nav class="Nav">
-          <a href="#" class="Nav__link">Transferencias</a>
+        <nav class="Nav" id="menu">
           <a href="#" class="Nav__link">Inicio</a>
-          <div>
-              <div>circulo</div>
-              <ul>
-                  <li><a href="#">Ver perfil</a></li>
-                  <li><a href="#">Gestiar cuenta</a></li>
-                  <li><a href="#">Cerrar sesión</a></li>
-              </ul>
-          </div>
+          <a href="#" class="Nav__link">Transferencias</a>
+          <a href="#" class="Nav__link">Mi perfil</a>
+          <a href="#" class="Nav__link">Cerrar sesión</a>
         </nav>
       </div>
       <div class="Header__bienvenida">
-        <h2>HOLA USUARIO</h2>
-        <h3>¿QUE HAREMOS HOY?</h3>
-      </div>
-      <div class="Informacion__cuenta">
+        <div>
+          <h2>HOLA USUARIO</h2>
+          <h3>¿QUE HAREMOS HOY?</h3>
+        </div>
+        <div class="Informacion__cuenta">
           <div class="Informacion__item">
-              <h4>N° de cuenta:</h4>
-              <span>xxx-xxx-xxx-xxx</span>
+            <h4>N° de cuenta:</h4>
+            <span>xxx-xxx-xxx-xxx</span>
           </div>
           <div class="Informacion__item">
-              <h4>Afiliado:</h4>
-              <span>BCP</span>
+            <h4>Afiliado:</h4>
+            <span>BCP</span>
           </div>
           <div class="Informacion__item">
-              <h4>Saldo:</h4>
-              <span>S/.1000000.00</span>
+            <h4>Saldo:</h4>
+            <span>S/.1000000.00</span>
           </div>
+        </div>
       </div>
     </header>
 
-    <main class="">
-
+    <main class="Main l-container">
+      <table id="Table" class="Table">
+        <thead class="Table__head">
+          <tr>
+            <th>Fecha</th>
+            <th>N° de cuenta</th>
+            <th>Monto</th>
+            <th>Tipo de transacción</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody class="Table__body">
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+          </tr>
+          <tr>
+            <td>01/01/2019</td>
+            <td>xxx-xxx-xxx-xxx</td>
+            <td>S/.1000000.00</td>
+            <td>Transferencia</td>
+            <td>cargando</td>
+          </tr>
+          
+        </tbody>
+      </table>
     </main>
+    <script src="./js/index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myTable").DataTable();
+      });
+    </script>
   </body>
 </html>

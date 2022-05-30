@@ -1,6 +1,36 @@
 .Nav{
     position: fixed;
     top: 0;
+    right: -50vw;/* 
+    display: none; */
+    background-color: $textColorLight;
+    width: 50vw;
+    height: 100vh;
+    padding: 2rem;
+    transition: all 0.5s;
+    @include from($medium) {
+        position: static;
+        width: auto;
+        height: auto;
+        display: flex;
+        background-color: transparent;
+        gap: 1.5rem;
+        color: $textColorLight;
+    }
+    &__link{
+        padding: 1rem 0;
+
+    }
+    &.active{
+        right: 0;
+
+    }
+}
+body {
+    position: relative;
     right: 0;
-    
+    transition: all 0.5s;
+    &.active{
+        right: 50vw;
+    }
 }
