@@ -1,18 +1,24 @@
-<?php 
+  <body>
+    <main class="Main l-container">
 
-    require_once('../../controller/tarjeta/listar.php');
+        <table id="Table" class="Table">
+            <thead class="Table__head">
+                <tr>
+                    <th>Id</th>
+                    <th>Fecha</th>
+                    <th>Origen</th>
+                    <th>Destino</th>
+                    <th>Monto</th>
+                    <th>Tipo de Operación</th>
+                </tr>
+            </thead>
+            <tbody class="Table__body">
+                <?php 
 
-?>
+                    listarOP(/**$id**/);
 
-<main class="Main--register">
-    <div class="logout">
-        <a href='../../controller/acceso/logout.php'><img src='../img/salida.png' alt='Cerrar Session' title='Cerrar Session' width='30' height='30'></a>
-    </div>
-    <div>
-        <?php 
-
-            listarTarj();
-
-        ?>
-    </div>
-</main>
+                ?>
+            </tbody>
+        </table>
+    </main>
+  </body>

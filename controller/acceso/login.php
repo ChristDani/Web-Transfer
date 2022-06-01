@@ -15,6 +15,7 @@ print_r($filas2);
 foreach($filas2 as $columna) 
 {
 
+	$iduser=$columna[0];
     $tusu=$columna[1];
 	$tdni = $columna[3];
 	$tclave = $columna[7];
@@ -33,7 +34,7 @@ elseif(($dni==$tdni) && ($clave == $tclave))
 
 	$_SESSION["user"]=$tusu;
 	session_start();
-	header("location:../../view/paginas/home.php");
+	header("location:../../index.php?pagina=home&id=$iduser&nombre=$tusu");
 	// echo "<script>
 	// 		if(window.history.replaceState) 
 	// 		{

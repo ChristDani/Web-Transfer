@@ -22,7 +22,17 @@ class op
     public function listarOperacion()
     {
 
-
+        $filas=null;
+        $model=new conexion();
+        $conexion=$model->conectar();
+        $sql="SELECT * FROM operaciones";
+        $rscat=sqlsrv_query($conexion,$sql);
+        while($row=sqlsrv_fetch_array($rscat))
+        {
+            $filas[]=$row;
+        }
+        $conexion=$model->desconectar();
+        return $filas;
         
     }
 

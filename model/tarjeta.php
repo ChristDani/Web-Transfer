@@ -21,13 +21,13 @@ class tarjeta
 
     }
     
-    public function listarTarjeta()
+    public function listarTarjeta($id)
     {
 
         $filas=null;
         $model=new conexion();
         $conexion=$model->conectar();
-        $sql="SELECT * FROM tarjeta";
+        $sql="SELECT * FROM tarjeta WHERE iduser='$id'";
         $rscat=sqlsrv_query($conexion,$sql);
         while($row=sqlsrv_fetch_array($rscat))
         {
