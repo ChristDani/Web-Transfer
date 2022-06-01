@@ -19,13 +19,13 @@ class op
 
     }
     
-    public function listarOperacion()
+    public function listarOperacion($cta,$ctait)
     {
 
         $filas=null;
         $model=new conexion();
         $conexion=$model->conectar();
-        $sql="SELECT * FROM operaciones";
+        $sql="SELECT * FROM operaciones where origen='$cta' or origen='$ctait'";
         $rscat=sqlsrv_query($conexion,$sql);
         while($row=sqlsrv_fetch_array($rscat))
         {

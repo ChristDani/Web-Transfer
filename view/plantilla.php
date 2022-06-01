@@ -31,11 +31,16 @@
         {
             include_once"paginas/login.php";
         }
-        elseif ($_GET["pagina"]==="home") 
+
+        elseif (session_start()) 
         {
-            if (session_start()) 
+            if ($_GET["pagina"]==="home") 
             {
                 include_once"paginas/home.php";
+            }
+            elseif ($_GET["pagina"]==="tarjeta") 
+            {
+              include_once"paginas/tarjeta.php";
             }
         }
         

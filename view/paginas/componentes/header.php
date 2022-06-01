@@ -1,12 +1,3 @@
-
-<?php 
-
-require_once('controller/tarjeta/listar.php');
-require_once('controller/op/listar.php');
-$nm=$_GET["nombre"];
-$id=$_GET["id"];
-?>
-
 <header class="Header Header--home">
       <div class="l-container--row">
         <h1 class="Header__logo">Logo</h1>
@@ -20,16 +11,9 @@ $id=$_GET["id"];
       </div>
       <div class="Header__bienvenida">
         <div>
-          <h2>HOLA <?php echo "! '$nm'";?></h2>
+          <h2>HOLA <?php #echo "! '$nm'";?></h2>
           <h3>¿QUE HAREMOS HOY?</h3>
         </div>
-        <div class="Informacion__cuenta">
-            <?php 
-
-                listarTarj($id);
-
-            ?>
-        </div>
-      </div>
-    </header>
-    
+    </div>
+</header>
+   

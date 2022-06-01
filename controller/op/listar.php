@@ -2,12 +2,12 @@
 
     require_once("model/operacion.php");
 
-    function listarOp(/**$id**/)
+    function listarOp($cta,$ctait)
     {
 
         $consultas=new op();
 
-        $filas=$consultas->listarOperacion(/**$id**/);
+        $filas=$consultas->listarOperacion($cta,$ctait);
 
 
         if ($filas != null) 
