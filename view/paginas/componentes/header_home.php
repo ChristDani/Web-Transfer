@@ -24,12 +24,15 @@ $id=$_GET["id"];
           <h3>¿QUE HAREMOS HOY?</h3>
         </div>
         <div class="Informacion__cuenta">
-            <?php 
-
-                listarTarj($id);
-
-            ?>
+        <div class="Informacion__item">
+        <a href=""><img src='view/img/trans.png' alt='Transferencias' title='Transferencias' width='50' height='50'></img></a>
+        <span>Transferencias</span>
         </div>
+        <div class="Informacion__item">
+        <a href=""><img src='view/img/factura.png' alt='Pagos de Servicio' title='Pagos de Servicio' width='50' height='50'></img></a>
+        <span>Pagos de Servicio</span>
+        </div>
+    </div>
       </div>
     </header>
     

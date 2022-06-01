@@ -9,11 +9,5 @@
           <a href='controller/acceso/logout.php' class="Nav__link"><img src='view/img/salida.png' alt='Cerrar Session' title='Cerrar Session' width='30' height='30'></a>
         </nav>
       </div>
-      <div class="Header__bienvenida">
-        <div>
-          <h2>HOLA <?php #echo "! '$nm'";?></h2>
-          <h3>¿QUE HAREMOS HOY?</h3>
-        </div>
-    </div>
 </header>
    
