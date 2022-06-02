@@ -3,7 +3,7 @@
 	
     $id=$_POST['id'];
     $correo=$_POST['correo'];
-    $telefono=$_POST[''];
+    $telefono=$_POST['telefono'];
     $clave=$_POST['clave'];
     
     $consultas=new user();

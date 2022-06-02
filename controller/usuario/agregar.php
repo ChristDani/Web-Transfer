@@ -13,5 +13,6 @@
 
     $_SESSION["user"]=$nombre;
 	session_start();
-	header("location:../../view/paginas/home.php");
+    $iduser=$consultas->buscarUser($dni);
+	header("location:../../index.php?pagina=home&id=$iduser&nombre=$nombre");
 ?>

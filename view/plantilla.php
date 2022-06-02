@@ -42,6 +42,10 @@
             {
               include_once"paginas/tarjeta.php";
             }
+            elseif ($_GET["pagina"]==="perfil") 
+            {
+              include_once"paginas/perfil.php";
+            }
         }
         
     }

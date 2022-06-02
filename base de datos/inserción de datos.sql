@@ -1,7 +1,10 @@
 
+use Web_Transfer
+go
+
 -- insertar tipos de operaciones --
 
-insert into tipo_op values('Pago'),('Transferencia')
+insert into tipo_op values('Deposito'),('Retiro'),('Pago'),('Transferencia')
 
 select * from tipo_op
 

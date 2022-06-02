@@ -26,6 +26,10 @@
                 
             }
         }
+        else 
+        {
+            echo "no tiene tarjetas";
+        }
 
     }
 
