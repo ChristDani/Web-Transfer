@@ -5,19 +5,19 @@ go
 
 create table tipo_op
 (
-idtpop int identity primary key,
+idtpop char(1) primary key,
 nombre char(15) not null
 )
 
 create table tipo_ct
 (
-idtpct int identity primary key,
+idtpct char(1) primary key,
 nombre char(15) not null
 )
 
 create table tipo_mn
 (
-idtpmn int identity primary key,
+idtpmn char(1) primary key,
 nombre char(15) not null
 )
 
@@ -41,10 +41,10 @@ constraint chk_sexo CHECK (sexo in ('masculino','femenino')),
 create table operaciones
 (
 idop char(9) primary key,
-idtpop int not null,
+idtpop char(1) not null,
 origen char(20) not null,
 destino char(20) not null,
-idtpmn int not null,
+idtpmn char(1) not null,
 monto smallmoney not null,
 fechaOp smalldatetime default getdate(),
 
@@ -57,8 +57,8 @@ create table tarjeta
 nmrtj char(16) primary key,
 iduser char(9) not null,
 clave char(4) not null,
-idtpct int not null,
-idtpmn int not null,
+idtpct char(1) not null,
+idtpmn char(1) not null,
 nmrcta varchar(14) not null,
 nmrctait char(20) not null,
 monto smallmoney default 50.0,

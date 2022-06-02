@@ -22,10 +22,10 @@ go
 
 create procedure sp_insertar_operacion
 @tidop char(9),
-@tidtpop int,
+@tidtpop char(1),
 @torigen char(20),
 @tdestino char(20),
-@tidtpmn int,
+@tidtpmn char(1),
 @tmonto smallmoney
 as
 begin
@@ -39,8 +39,8 @@ create procedure sp_generarTrj
 @tnmrtj char(16),
 @tiduser char(9),
 @tclave char(4),
-@tidtpct int,
-@tidtpmn int,
+@tidtpct char(1),
+@tidtpmn char(1),
 @tnmrcta char(14),
 @tnmrctait char(20)
 as
@@ -70,7 +70,7 @@ go
 declare @codigo char(9)
 set @codigo = dbo.Geniduser()
 print @codigo;
-exec sp_insertar_usuario @codigo,'brando','pocahontas','54844694','femenino','tulokita@hotmail.com','455142'
+exec sp_insertar_usuario @codigo,'Christian','Campaña','73179455','masculino','christian@gmail.com','745896'
 
 select * from usuario
 
@@ -85,7 +85,7 @@ select * from usuario
 declare @codigo char(9)
 set @codigo = dbo.Genidop()
 print @codigo;
-exec sp_insertar_operacion @codigo,1,'','',1,50.0
+exec sp_insertar_operacion @codigo,'1','','','1',50.0
 
 select * from operaciones
 
@@ -100,6 +100,6 @@ print @nmrcta;
 declare @nmrctait char(20)
 set @nmrctait = dbo.Gennmrctait()
 print @nmrctait;
-exec sp_generarTrj @nmrtrj,'US0000003','8692',1,1,@nmrcta,@nmrctait
+exec sp_generarTrj @nmrtrj,'US0000001','8695','1','1',@nmrcta,@nmrctait
 
 select * from tarjeta
