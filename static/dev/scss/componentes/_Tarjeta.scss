@@ -1,0 +1,16 @@
+.Tarjeta {
+  border: 1px solid $textColorLight;
+  padding: 0.5rem 1rem;
+}
+.Informacion__tarjeta {
+  display: flex;
+  justify-content: space-around;
+
+}
+.Informacion__accion {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
