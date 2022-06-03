@@ -2,7 +2,6 @@
 <?php 
 
 require_once('controller/tarjeta/listar.php');
-require_once('controller/op/listar.php');
 $nm=$_GET["nombre"];
 $id=$_GET["id"];
 ?>
@@ -23,16 +22,18 @@ $id=$_GET["id"];
           <h2>HOLA <?php echo "! '$nm'";?></h2>
           <h3>¿QUE HAREMOS HOY?</h3>
         </div>
-        <div class="Informacion__cuenta">
-        <div class="Informacion__item">
+        <div class="Informacion__tarjeta">
+        <div class="Informacion__accion">
         <a href=""><img src='view/img/trans.png' alt='Transferencias' title='Transferencias' width='50' height='50'></img></a>
         <span>Transferencias</span>
         </div>
-        <div class="Informacion__item">
+        <div class="Informacion__accion">
         <a href=""><img src='view/img/factura.png' alt='Pagos de Servicio' title='Pagos de Servicio' width='50' height='50'></img></a>
         <span>Pagos de Servicio</span>
         </div>
     </div>
       </div>
     </header>
+
+
     

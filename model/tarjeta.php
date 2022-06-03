@@ -37,6 +37,23 @@ class tarjeta
         return $filas;
         
     }
+
+    public function listarTarjetaCt($ct)
+    {
+
+        $filas=null;
+        $model=new conexion();
+        $conexion=$model->conectar();
+        $sql="SELECT nmrcta,nmrctait,monto FROM tarjeta WHERE nmrcta='$ct'";
+        $rscat=sqlsrv_query($conexion,$sql);
+        while($row=sqlsrv_fetch_array($rscat))
+        {
+            $filas[]=$row;
+        }
+        $conexion=$model->desconectar();
+        return $filas;
+        
+    }
     
 }
 
