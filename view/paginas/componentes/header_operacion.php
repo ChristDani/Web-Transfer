@@ -5,7 +5,7 @@ $id=$_GET["id"];
 
 <header class="Header Header--home">
     <div class="l-container--row">
-        <h1 class="Header__logo">Logo</h1>
+        <h1 class="Header__logo"><img class="logo" src="view/img/logo.PNG"></h1>
         <div class="Header__menu" id="btn_nav">
         <i class="fa-solid fa-bars"></i>
         </div>
