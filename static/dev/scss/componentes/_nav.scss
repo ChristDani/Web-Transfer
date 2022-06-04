@@ -8,6 +8,7 @@
     height: 100vh;
     padding: 2rem;
     transition: all 0.5s;
+    color: $textColor;
     @include from($medium) {
         position: static;
         width: auto;

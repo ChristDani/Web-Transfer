@@ -1,6 +1,9 @@
 .Tarjeta {
-  border: 1px solid $textColorLight;
+  border: 4px solid #33376c;
+  background-color: #5962cd;
+  color:$textColorLight;
   padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
 .Informacion__tarjeta {
   display: flex;

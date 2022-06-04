@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/00ec2580a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <header class="Header Header--home">
+      <div class="l-container--row">
+        <a href="index.html" class="Header__logo"><img class="logo" src="img/logowebtransfer.PNG" alt=""></a>
+        <div class="Header__menu" id="btn_nav">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="Nav" id="menu">
+          <a href="index.html" class="Nav__link">Inicio</a>
+          <a href="#" class="Nav__link">Operaciones</a>
+          <a href="perfil.html" class="Nav__link">Mi perfil</a>
+          <a href="#" class="Nav__link">Cerrar sesión</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="Main l-container">
+      <div class="form__container form__perfil">
+        <h2 class="form__container__title">Actualizar Perfil</h2>
+        <form
+          action="controller/usuario/agregar.php"
+          method="post"
+          class="form__container"
+        >
+          <label for="nombre">
+            <span id="subir">Nombre:</span>
+            <input
+              class="form__container__input"
+              type="text"
+              name="nombre"
+              id="nombre"
+            />
+          </label>
+
+          <label for="apellido">
+            <span id="subir">Apellido:</span>
+            <input
+              class="form__container__input"
+              type="text"
+              name="apellido"
+              id="apellido"
+            />
+          </label>
+
+          <label for="dni">
+            <span id="subir">DNI:</span>
+            <input
+              class="form__container__input"
+              type="text"
+              name="dni"
+              id="dni"
+            />
+          </label>
+
+          <label for="sexo">
+            <span id="subir">Sexo:</span>
+            <select name="sexo" required class="form__container__input">
+              <option id="sexo" value="masculino">masculino</option>
+              <option id="sexo" value="femenino">femenino</option>
+            </select>
+          </label>
+
+          <label for="correo">
+            <span id="subir">Correo:</span>
+            <input
+              class="form__container__input"
+              type="email"
+              name="correo"
+              id="correo"
+              required
+              title="el formato de correo@gmail.com"
+              pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            />
+          </label>
+
+          <label for="telefono">
+            <span id="subir">Telefono:</span>
+            <input
+              class="form__container__input"
+              type="tel"
+              name="telefono"
+              id="telefono"
+            />
+          </label>
+
+          <label for="clave">
+            <span id="subir">Clave:</span>
+            <input
+              class="form__container__input"
+              type="text"
+              name="clave"
+              id="clave"
+              maxlength="6"
+              required
+              oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+            />
+          </label>
+
+          <input
+            class="form__container__button"
+            type="submit"
+            value="Actualizar Datos"
+          />
+        </form>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
