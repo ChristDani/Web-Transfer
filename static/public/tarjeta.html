@@ -39,10 +39,28 @@
           <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="Nav" id="menu">
-          <a href="index.html" class="Nav__link">Inicio</a>
-          <a href="#" class="Nav__link">Transferencias</a>
-          <a href="perfil.html" class="Nav__link">Mi perfil</a>
-          <a href="#" class="Nav__link">Cerrar sesión</a>
+          <ul class="Nav__contenedor">
+            <li class="Nav__item">
+              <a href="index.html" class="Nav__link">Inicio</a>
+            </li>
+            <li class="Nav__item  submenu">
+              <a href="#" class="Nav__link">Operaciones</a>
+              <ul class="Nav__submenu">
+                <li class="Nav__subitem">
+                  <a class="Nav__sublink" href="#">Transferencias</a>
+                </li>
+                <li class="Nav__subitem">
+                  <a class="Nav__sublink" href="#">Pagos de cuenta</a>
+                </li>
+              </ul>
+            </li>
+            <li class="Nav__item">
+              <a href="perfil.html" class="Nav__link">Mi perfil</a>
+            </li>
+            <li class="Nav__item">
+              <a href="#" class="Nav__link">Cerrar sesión</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="Header__bienvenida">
