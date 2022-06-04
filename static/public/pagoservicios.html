@@ -31,11 +31,11 @@
               <a href="#" class="Nav__link">Operaciones</a>
               <ul class="Nav__submenu">
                 <li class="Nav__subitem">
-                  <a class="Nav__sublink" href="transferencias.html">Transferencias</a>
-                </li>
-                <li class="Nav__subitem">
-                  <a class="Nav__sublink" href="pagoservicios.html">Pagos de cuenta</a>
-                </li>
+                    <a class="Nav__sublink" href="transferencias.html">Transferencias</a>
+                  </li>
+                  <li class="Nav__subitem">
+                    <a class="Nav__sublink" href="pagoservicios.html">Pagos de cuenta</a>
+                  </li>
               </ul>
             </li>
             <li class="Nav__item">
@@ -51,7 +51,7 @@
 
     <main class="Main l-container">
       <div class="form__container form__perfil">
-        <h2 class="form__container__title">Transferencias</h2>
+        <h2 class="form__container__title">Pago de servicios</h2>
         <form
           action="controller/usuario/agregar.php"
           method="post"
@@ -66,13 +66,18 @@
             </select>
           </label>
           
-          <input
-            class="form__container__input"
-            type="text"
-            name="destino"
-            id="destino"
-            placeholder="Cuenta de destino"
-          />
+          <label for="tarjetas">
+            Seleccione un servicio
+            <select name="servicios" id="servicios">
+              <option value="">--- --- ---</option>
+              <option value="Epsel">Epsel</option>
+              <option value="Ensa">Ensa</option>
+              <option value="Ensa">Movistar</option>
+              <option value="Ensa">Claro</option>
+              <option value="Ensa">Entel</option>
+              <option value="Ensa">Bitel</option>
+            </select>
+          </label>
           <input
             class="form__container__input"
             type="text"
@@ -83,7 +88,7 @@
           <input
             class="form__container__button"
             type="submit"
-            value="Hacer transferencia"
+            value="Efectuar pago"
           />
         </form>
       </div>
