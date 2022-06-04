@@ -13,14 +13,51 @@
         position: static;
         width: auto;
         height: auto;
-        display: flex;
         background-color: transparent;
         gap: 1.5rem;
         color: $textColorLight;
     }
+
+    
+    &__contenedor {
+        @include from($medium) {
+            display: flex;
+        }
+    }
+
+    &__item {
+        margin-left: 1rem;
+    }
     &__link{
         padding: 1rem 0;
+    }
 
+    .submenu {
+        position: relative;
+
+        &:hover .Nav__submenu{
+            display: block;
+        }
+    }
+    
+    &__submenu {
+        position: absolute;
+        background-color: $firstColor;
+        color: $textColorLight;
+        padding:1rem 1.5rem;
+        display: none;
+        @include from($medium) {
+            background-color: $textColorLight;
+            color: #000;
+        }
+    }
+
+    &__subitem {
+        margin-bottom: 1rem;
+    }
+
+    &__sublink:hover {
+        text-decoration: underline;
     }
     &.active{
         right: 0;
