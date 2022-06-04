@@ -18,108 +18,32 @@
   <body>
     <header class="Header Header--home">
       <div class="l-container--row">
-        <h1 class="Header__logo">Logo</h1>
+        <h1 class="Header__logo"><img class="logo" src="img/logowebtransfer.PNG" alt=""></h1>
         <div class="Header__menu" id="btn_nav">
           <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="Nav" id="menu">
-          <a href="#" class="Nav__link">Inicio</a>
+          <a href="index.html" class="Nav__link">Inicio</a>
           <a href="#" class="Nav__link">Transferencias</a>
-          <a href="#" class="Nav__link">Mi perfil</a>
+          <a href="perfil.html" class="Nav__link">Mi perfil</a>
           <a href="#" class="Nav__link">Cerrar sesión</a>
         </nav>
       </div>
     </header>
 
     <main class="Main l-container">
-      <div class="form__container form__perfil">
-        <h2 class="form__container__title">Datos de Usuario</h2>
-        <form
-          action="controller/usuario/agregar.php"
-          method="post"
-          class="form__container"
-        >
-          <label for="nombre">
-            <span id="subir">Nombre:</span>
-            <input
-              class="form__container__input"
-              type="text"
-              name="nombre"
-              id="nombre"
-            />
-          </label>
-
-          <label for="apellido">
-            <span id="subir">Apellido:</span>
-            <input
-              class="form__container__input"
-              type="text"
-              name="apellido"
-              id="apellido"
-            />
-          </label>
-
-          <label for="dni">
-            <span id="subir">DNI:</span>
-            <input
-              class="form__container__input"
-              type="text"
-              name="dni"
-              id="dni"
-            />
-          </label>
-
-          <label for="sexo">
-            <span id="subir">Sexo:</span>
-            <select name="sexo" required class="form__container__input">
-              <option id="sexo" value="masculino">masculino</option>
-              <option id="sexo" value="femenino">femenino</option>
-            </select>
-          </label>
-
-          <label for="correo">
-            <span id="subir">Correo:</span>
-            <input
-              class="form__container__input"
-              type="email"
-              name="correo"
-              id="correo"
-              required
-              title="el formato de correo@gmail.com"
-              pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
-            />
-          </label>
-
-          <label for="telefono">
-            <span id="subir">Telefono:</span>
-            <input
-              class="form__container__input"
-              type="tel"
-              name="telefono"
-              id="telefono"
-            />
-          </label>
-
-          <label for="clave">
-            <span id="subir">Clave:</span>
-            <input
-              class="form__container__input"
-              type="text"
-              name="clave"
-              id="clave"
-              maxlength="6"
-              required
-              oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
-            />
-          </label>
-
-          <input
-            class="form__container__button"
-            type="submit"
-            value="Actualizar Datos"
-          />
-        </form>
-      </div>
+        <div class="Perfil">
+          <h2 class="Perfil__title">Mi perfil</h2>
+          <div class="Perfil__container">
+            <p>Nombre: <span>Juanito</span></p>
+            <p>Apellidos: <span>Rivera</span></p>
+            <p>DNI: <span>76253121</span></p>
+            <p>Sexo: <span>Prefiero no decirlo</span></p>
+            <p>Correo: <span>juanito@gmail.com</span></p>
+            <p>Telefono: <span>988219890</span></p>
+            <a href="actualizar_perfil.html" class="form__container__button">Actualizar perfil</a>
+          </div>
+        </div>
     </main>
     <script src="./js/index.js"></script>
   </body>
