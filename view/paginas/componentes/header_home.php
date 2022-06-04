@@ -2,7 +2,6 @@
 <?php 
 
 require_once('controller/tarjeta/listar.php');
-$nm=$_GET["nombre"];
 $id=$_GET["id"];
 ?>
 
@@ -13,7 +12,7 @@ $id=$_GET["id"];
           <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="Nav" id="menu">
-          <a href='#' class="Nav__link">Inicio</a>
+        <?php echo "<a href='index.php?pagina=home&id=".$id."' class='Nav__link'>Inicio</a>"; ?>
           <a href='#' class="Nav__link">Operaciones</a>
           <?php echo "<a href='index.php?pagina=perfil&id=".$id."' class='Nav__link'>Mi Perfil</a>"; ?>
           <a href='controller/acceso/logout.php' class="Nav__link">Cerrar Session</a>
@@ -26,11 +25,11 @@ $id=$_GET["id"];
         </div>
         <div class="Informacion__tarjeta">
         <div class="Informacion__accion">
-        <a href=""><img src='view/img/trans.png' alt='Transferencias' title='Transferencias' width='50' height='50'></img></a>
+        <?php echo "<a href='index.php?pagina=transaccion&id=".$id."'>";?><img src='view/img/trans.png' alt='Transferencias' title='Transferencias' width='50' height='50'></img></a>
         <span>Transferencias</span>
         </div>
         <div class="Informacion__accion">
-        <a href=""><img src='view/img/factura.png' alt='Pagos de Servicio' title='Pagos de Servicio' width='50' height='50'></img></a>
+        <?php echo "<a href='index.php?pagina=pagos&id=".$id."'>";?><img src='view/img/factura.png' alt='Pagos de Servicio' title='Pagos de Servicio' width='50' height='50'></img></a>
         <span>Pagos de Servicio</span>
         </div>
     </div>

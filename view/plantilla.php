@@ -46,6 +46,14 @@
             {
               include_once"paginas/perfil.php";
             }
+            elseif ($_GET["pagina"]==="transaccion") 
+            {
+              include_once"paginas/transaccion.php";
+            }
+            elseif ($_GET["pagina"]==="pagos") 
+            {
+              include_once"paginas/pagos.php";
+            }
         }
         
     }
