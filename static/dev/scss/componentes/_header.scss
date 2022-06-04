@@ -25,12 +25,14 @@
     .Informacion__item{
       margin-top: 1.5rem;
     }
+    .Informacion__cuenta{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap:1rem;
+    }
     @include from($medium) {
-      .Informacion__cuenta{
-        display: flex;
-        justify-content: center;
-        gap:1rem;
-      }
+      justify-content: space-between;
     }
 
     .Informacion__title {
