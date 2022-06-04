@@ -2,7 +2,6 @@
 <?php 
 
 require_once('controller/tarjeta/listar.php');
-$id=$_GET["id"];
 require_once('model/usuario.php');
 $id=$_GET["id"];
 
@@ -25,27 +24,34 @@ if ($lista!=null) {
           <i class="fa-solid fa-bars"></i>
         </div>
         <nav class="Nav" id="menu">
-        <?php echo "<a href='index.php?pagina=home&id=".$id."' class='Nav__link'>Inicio</a>"; ?>
-          <a href='#' class="Nav__link">Operaciones</a>
-          <?php echo "<a href='index.php?pagina=perfil&id=".$id."' class='Nav__link'>Mi Perfil</a>"; ?>
-          <a href='controller/acceso/logout.php' class="Nav__link">Cerrar Session</a>
+          <ul class="Nav__contenedor">
+            <li class="Nav__item">
+              <?php echo "<a href='index.php?pagina=home&id=".$id."' class='Nav__link'>Inicio</a>"; ?>
+            </li>
+            <li class="Nav__item  submenu">
+              <a href="" class="Nav__link">Operaciones</a>
+              <ul class="Nav__submenu">
+                <li class="Nav__subitem">
+                  <?php echo "<a class='Nav__sublink' href='index.php?pagina=transaccion&id=".$id."'>Transferencias</a>";?>
+                </li>
+                <li class="Nav__subitem">
+                  <?php echo "<a class='Nav__sublink' href='index.php?pagina=pagos&id=".$id."'>Pagos de Servicio</a>";?>
+                </li>
+              </ul>
+            </li>
+            <li class="Nav__item">
+              <?php echo "<a href='index.php?pagina=perfil&id=".$id."' class='Nav__link'>Mi Perfil</a>"; ?>
+            </li>
+            <li class="Nav__item">
+              <a href='controller/acceso/logout.php' class="Nav__link">Cerrar Session</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="Header__bienvenida">
         <div>
-          <h2>HOLA <?php echo "! '$nombre'";?></h2>
-          <h3>¿QUE HAREMOS HOY?</h3>
+          <h2>HOLA <?php echo "! '$nombre'";?>¿QUE HAREMOS HOY?</h2>
         </div>
-        <div class="Informacion__tarjeta">
-        <div class="Informacion__accion">
-        <?php echo "<a href='index.php?pagina=transaccion&id=".$id."'>";?><img src='view/img/trans.png' alt='Transferencias' title='Transferencias' width='50' height='50'></img></a>
-        <span>Transferencias</span>
-        </div>
-        <div class="Informacion__accion">
-        <?php echo "<a href='index.php?pagina=pagos&id=".$id."'>";?><img src='view/img/factura.png' alt='Pagos de Servicio' title='Pagos de Servicio' width='50' height='50'></img></a>
-        <span>Pagos de Servicio</span>
-        </div>
-    </div>
       </div>
     </header>
 

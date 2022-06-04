@@ -1,6 +1,4 @@
 
-
-  <body>
     <main class="Main l-container">
 
       <table id="Table" class="Table">
@@ -23,4 +21,3 @@
         </tbody>
       </table>
     </main>
-  </body>
