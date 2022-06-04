@@ -29,7 +29,7 @@ class user
         $filas=null;
         $model=new conexion();
 		$conexion=$model->conectar();
-        $sql="select * from usuario where iduser='".$id."'";
+        $sql="select nombre,apellido,dni,sexo,correo,isnull(telefono, 'Sin Telefono'),clave from usuario where iduser='".$id."'";
         $rs=sqlsrv_query($conexion,$sql);
 
         while($row=sqlsrv_fetch_array($rs))

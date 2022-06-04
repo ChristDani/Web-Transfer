@@ -6,13 +6,13 @@ if ($lista!=null) {
 foreach($lista as $columna) 
 {
 
-    $nombre=$columna[1];
-    $apellido=$columna[2];
-	$dni = $columna[3];
-    $sexo = $columna[4];
-    $correo = $columna[5];
-    $telefono = $columna[6];
-	$clave = $columna[7];
+    $nombre=$columna[0];
+    $apellido=$columna[1];
+	$dni = $columna[2];
+    $sexo = $columna[3];
+    $correo = $columna[4];
+    $telefono = $columna[5];
+	$clave = $columna[6];
 		
 
 ?>
