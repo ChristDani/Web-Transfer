@@ -8,6 +8,16 @@
   }
   &__logo {
     color: $textColor;
+    width: 85%;
+    &--formulario {
+      margin-left: auto;
+      margin-right: auto;
+
+      @include from($xlarge) {
+        margin-left: 64.9%;
+        margin-right: 0;
+      }
+    }
   }
   &__menu {
     padding: 1rem;

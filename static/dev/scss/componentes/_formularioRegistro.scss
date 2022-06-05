@@ -16,30 +16,36 @@
       margin-bottom: 1rem;
       
   }
-    &__input, &__button{
-        padding: 0.4rem 0.2rem;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-    &__button{
-        background-color: $firstColor;
-        color: $textColorLight;
-        border: none;
-        cursor: pointer;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        text-align: center;
-    }
-    &__title{
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    &__small{
-      color: $firstColor;
-    }
+  &__input, &__button{
+      padding: 0.4rem 0.2rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+  }
+  &__button{
+      background-color: $firstColor;
+      color: $textColorLight;
+      border: none;
+      cursor: pointer;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+  }
+  &__title{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+  }
+  &__small{
+    color: $firstColor;
+    display: inline;
+  }
 
-    select {
-      width: 100%;
-      padding: 0.5rem;
-    }
+  select {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .ayuda {
+    width: 100%;
+    text-align: center;
+  }
 }
