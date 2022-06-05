@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/00ec2580a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"
+    />
+  </head>
+  <body>
+    <header class="Header Header--home">
+      <div class="l-container--row">
+        <a href="index.html" class="Header__logo"><img class="logo" src="img/logo.png" alt=""></a>
+        <div class="Header__menu" id="btn_nav">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="Nav" id="menu">
+          <ul class="Nav__contenedor">
+            <li class="Nav__item">
+              <a href="index.html" class="Nav__link">Inicio</a>
+            </li>
+            <li class="Nav__item  submenu">
+              <a href="#" class="Nav__link">Operaciones</a>
+              <ul class="Nav__submenu">
+                <li class="Nav__subitem">
+                  <a class="Nav__sublink" href="transferencias.html">Transferencias</a>
+                </li>
+                <li class="Nav__subitem">
+                  <a class="Nav__sublink" href="pagoservicios.html">Pagos de cuenta</a>
+                </li>
+              </ul>
+            </li>
+            <li class="Nav__item">
+              <a href="perfil.html" class="Nav__link">Mi perfil</a>
+            </li>
+            <li class="Nav__item">
+              <a href="#" class="Nav__link">Cerrar sesión</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="Main l-container">
+      <div class="form__container form__perfil">
+        <h2 class="form__container__title">Generar tarjeta</h2>
+        <form
+          action="controller/usuario/agregar.php"
+          method="post"
+          class="form__container"
+        >
+        <label class="form__container__label"
+        for="tarjetas">
+          Tipo de cuenta
+          <select name="tipocuenta" id="tarjetas">
+            <option value="">--- --- ---</option>
+            <option value="debito">Debito</option>
+            <option value="credito">Credito</option>
+          </select>
+        </label>
+
+        <label class="form__container__label"
+        for="tarjetas">
+          Tipo de moneda
+          <select name="tarjetas" id="tarjetas">
+            <option value="">--- --- ---</option>
+            <option value="debito">Dolares</option>
+            <option value="credito">Soles</option>
+          </select>
+        </label>
+
+          <label for="clave">
+            <span id="subir">Clave:</span>
+            <input
+              class="form__container__input"
+              type="text"
+              name="clave"
+              id="clave"
+              maxlength="6"
+              required
+              oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
+            />
+          </label>
+          <input
+            class="form__container__button"
+            type="submit"
+            value="Generar tarjeta"
+          />
+        </form>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
