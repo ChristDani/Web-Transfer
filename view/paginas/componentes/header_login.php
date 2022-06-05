@@ -1,5 +1,5 @@
 <header class="Header">
         <div class="l-container--row">
-        <h1 class="Header__logo"><img class="logo" src="view/img/logo.PNG"></h1>
+            <a href="index.html" class="Header__logo--formulario"><img class="logo" src="view/img/logo.png" alt=""></a>
         </div>
 </header>

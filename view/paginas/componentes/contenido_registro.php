@@ -39,7 +39,7 @@
             </label>
 
             <input class="form__container__button" type="submit" value="Registrar">
-            <small>¿Ya tienes una cuenta? <a href="index.php?pagina=login" class="form__container__small">Inicia Sesion</a></small>
+            <p class="ayuda">¿Ya tienes una cuenta? <a href="index.php?pagina=login" class="form__container__small">Inicie Sesion</a></p>
         </form>
     </div>
 </main>
