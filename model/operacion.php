@@ -25,7 +25,7 @@ class op
         $filas=null;
         $model=new conexion();
         $conexion=$model->conectar();
-        $sql="SELECT o.idop,o.fechaOp,o.origen,o.destino,o.monto,t.nombre as [Tipo de Operación] FROM operaciones as o inner join tipo_op as t on t.idtpop=o.idtpop where o.origen='$cta' or o.origen='$ctait' or o.destino='$cta' or o.destino='$ctait'";
+        $sql="SELECT o.idop,o.fechaOp,o.origen,o.destino,o.monto,t.nombre,o.idtpmn FROM operaciones as o inner join tipo_op as t on t.idtpop=o.idtpop where o.origen='$cta' or o.origen='$ctait' or o.destino='$cta' or o.destino='$ctait'";
         $rscat=sqlsrv_query($conexion,$sql);
         while($row=sqlsrv_fetch_array($rscat))
         {

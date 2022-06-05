@@ -15,13 +15,19 @@
 
             foreach ($filas as $fila) 
             {
+                if ($fila[6]==="1") {
+                    $mn="S/";
+                }
+                else {
+                    $mn="$";
+                }
                 echo "<tr>";
                 $fecha=$fila[1]-> format('d/m/Y');
                 echo "<td>$fecha</td>";
                 echo "<td>$fila[2]</td>";
                 echo "<td>$fila[3]</td>";
                 $monto= number_format($fila[4],2);
-                echo "<td>S/.$monto</td>";
+                echo "<td>$mn $monto</td>";
                 echo "<td>$fila[5]</td>";
                 echo "</tr>";
                 

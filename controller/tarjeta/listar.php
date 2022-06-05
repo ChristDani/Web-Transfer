@@ -21,15 +21,33 @@
 
             foreach ($filas as $fila) 
             {
+                if ($fila[4]==="1") {
+                    $mn="S/";
+                }
+                else {
+                    $mn="$";
+                }
                 $saldo= number_format($fila[7],2);
                 echo '<div class="Tarjeta">';
                 echo "<a href='index.php?pagina=tarjeta&cta=".$fila[5]."&id=".$fila[1]."' alt='Cuenta=$fila[5]' title='Cuenta=$fila[5]'>";
                 echo "<p class='Tarjeta__datalle'>$fila[5]</p>";
-                echo "<p class='Tarjeta__datalle'>S/. $saldo</p>";
+                echo "<p class='Tarjeta__datalle'>$mn $saldo</p>";
                 echo "</a>"; 
-                echo "</div>";
-                
+                echo "</div>";                
             }
+
+            echo "<div class='Promociones'>";
+            echo "<h2 class='Promociones__title'>Promociones del mes</h2>";
+            echo "<div class='Promociones__promocion'>";
+            echo "Compra tu soat con el 20% de descuento si te afilias con nosotros";
+            echo "</div>";
+            echo "<div class='Promociones__promocion'>";
+            echo "Seguro de vida";
+            echo "</div>";
+            echo "<div class='Promociones__promocion'>";
+            echo "Fondo comun desde 200 soles";
+            echo "</div>";
+            echo "</div>";
 
         }
         else 
@@ -38,6 +56,21 @@
             echo "<a href='index.php?pagina=gnrTarjeta&id=".$id."&bono=si' alt='Generar Tarjeta' title='Generar Tarjeta'>";
             echo "<p class='Tarjeta__datalle'>Agregar nueva tarjeta</p>";
             echo "</a>"; 
+            echo "</div>";
+            echo "<div class='Promociones'>";
+            echo "<h2 class='Promociones__title'>Promociones del mes</h2>";
+            echo "<div class='Promociones__promocion'>";
+            echo "Crea tu primera tarjeta ahora y recibe un bono de 50 Soles";
+            echo "</div>";
+            echo "<div class='Promociones__promocion'>";
+            echo "Compra tu soat con el 20% de descuento si te afilias con nosotros";
+            echo "</div>";
+            echo "<div class='Promociones__promocion'>";
+            echo "Seguro de vida";
+            echo "</div>";
+            echo "<div class='Promociones__promocion'>";
+            echo "Fondo comun desde 200 soles";
+            echo "</div>";
             echo "</div>";
         }
 

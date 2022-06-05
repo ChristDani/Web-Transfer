@@ -15,6 +15,12 @@ if ($filas != null)
     {
       foreach ($filas as $fila) 
       {
+        if ($fila[3]==="1") {
+            $mn="S/";
+        }
+        else {
+            $mn="$";
+        }
         $cta=$fila[0];
         $ctait=$fila[1];
         $saldo= number_format($fila[2],2);
@@ -55,7 +61,7 @@ if ($filas != null)
         <div class="Informacion__tarjeta">
           <div class="Informacion__item">
             <h4>Saldo:</h4>
-            <span><?php echo "S/. $saldo"; ?></span>
+            <span><?php echo "$mn $saldo"; ?></span>
           </div>
           <div class="Informacion__item">
             <h4>N° de cuenta:</h4>
