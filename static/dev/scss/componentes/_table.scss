@@ -8,3 +8,11 @@
         background-color: rgb(221, 213, 213);
     }
 }
+#Table_wrapper > .row:nth-child(1) > div:nth-child(1) {
+    display: flex;
+    gap: 1rem;
+}
+.paginate_button a{
+    background-color: transparent;
+    border: 1px solid #7295e2;;
+}

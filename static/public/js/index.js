@@ -58,12 +58,15 @@ document.addEventListener("DOMContentLoaded", () => {
       buttons: [
         {
           extend: "csv",
-          className: "btn-success",
+          className: "btn btn-success",
         },
         {
           extend: "excel",
           className: "btn-success",
         },
       ],
-    })
+    }).buttons()
+    .container().appendTo("#Table_wrapper .col-md-6:eq(0)");
+    $(".dataTables_length select").addClass("form-control");
+    
 });
