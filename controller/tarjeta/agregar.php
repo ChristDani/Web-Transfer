@@ -1,13 +1,13 @@
 <?php
     require_once("../../model/tarjeta.php");
 	
-    $iduser=$_POST[''];
+    $id=$_GET['id'];
+    $idtpct=$_POST['idtpct'];
+    $idtpmn=$_POST['idtpmn'];
     $clave=$_POST['clave'];
-    $idtpct=$_POST[''];
-    $idtpmn=$_POST[''];
     
     $consultas=new tarjeta();
-    $consultas->insertarTarjeta($iduser,$clave,$idtpct,$idtpmn);
+    $consultas->insertarTarjeta($id,$clave,$idtpct,$idtpmn);
 
-	header("location:../../view/paginas/home.php");
+	header("location:../../index.php?pagina=home&id=$id");
 ?>

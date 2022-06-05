@@ -1,14 +1,16 @@
 <?php
     require_once("../../model/operacion.php");
-	
-    $idtpop=$_POST[''];
-    $origen=$_POST[''];
-    $destino=$_POST[''];
-    $idtpmn=$_POST[''];
-    $monto=$_POST[''];
+
+	$id=$_GET["id"];
+    $idtpop=$_GET['idtpop'];
+
+    $origen=$_POST['origen'];
+    $destino=$_POST['destino'];
+    $idtpmn=$_POST['idtpmn'];
+    $monto=$_POST['monto'];
     
     $consultas=new op();
     $consultas->insertarOperacion($idtpop,$origen,$destino,$idtpmn,$monto);
 
-	header("location:../../view/paginas/home.php");
+	header("location:../../index.php?pagina=home&id=$id");
 ?>

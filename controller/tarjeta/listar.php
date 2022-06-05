@@ -12,6 +12,13 @@
 
         if ($filas != null) 
         {
+
+            echo '<div class="Tarjeta__nuevo">';
+            echo "<a href='index.php?pagina=gnrTarjeta&id=".$id."' alt='Generar Tarjeta' title='Generar Tarjeta'>";
+            echo "<p class='Tarjeta__datalle'>Agregar nueva tarjeta</p>";
+            echo "</a>"; 
+            echo "</div>";
+
             foreach ($filas as $fila) 
             {
                 $saldo= number_format($fila[7],2);
@@ -23,10 +30,15 @@
                 echo "</div>";
                 
             }
+
         }
         else 
         {
-            echo "no tiene tarjetas";
+            echo '<div class="Tarjeta__nuevo">';
+            echo "<a href='index.php?pagina=gnrTarjeta&id=".$id."' alt='Generar Tarjeta' title='Generar Tarjeta'>";
+            echo "<p class='Tarjeta__datalle'>Agregar nueva tarjeta</p>";
+            echo "</a>"; 
+            echo "</div>";
         }
 
     }

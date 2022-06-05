@@ -19,6 +19,7 @@
                 $fecha=$fila[1]-> format('d/m/Y');
                 echo "<td>$fecha</td>";
                 echo "<td>$fila[2]</td>";
+                echo "<td>$fila[3]</td>";
                 $monto= number_format($fila[4],2);
                 echo "<td>S/.$monto</td>";
                 echo "<td>$fila[5]</td>";

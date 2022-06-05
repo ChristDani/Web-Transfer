@@ -13,6 +13,14 @@
 
     $_SESSION["user"]=$nombre;
 	session_start();
-    $iduser=$consultas->buscarUser($dni);
-	header("location:../../index.php?pagina=home&id=$iduser&nombre=$nombre");
+    $lista=$consultas->buscarUser($dni);
+
+    if ($lista!=null) 
+    {
+        foreach($lista as $columna) 
+        {
+            $id=$columna[0];
+        }
+    }
+	header("location:../../index.php?pagina=home&id=$id");
 ?>

@@ -6,6 +6,7 @@
           <tr>
             <th>Fecha</th>
             <th>Origen</th>
+            <th>Destino</th>
             <th>Monto</th>
             <th>Tipo de Operación</th>
           </tr>

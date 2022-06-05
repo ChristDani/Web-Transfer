@@ -1,6 +1,12 @@
 
 <?php 
 $id=$_GET["id"];
+
+require_once('model/tarjeta.php');
+
+$consultas=new tarjeta();
+
+$filas=$consultas->listarTarjeta($id);
 ?>
 
 <header class="Header Header--home">

@@ -34,16 +34,7 @@ elseif(($dni==$tdni) && ($clave == $tclave))
 
 	$_SESSION["user"]=$tusu;
 	session_start();
-	header("location:../../index.php?pagina=home&id=$iduser&nombre=$tusu");
-	// echo "<script>
-	// 		if(window.history.replaceState) 
-	// 		{
-	// 			window.history.replaceState(null, null, window.location.href);
-	// 		}
-
-	// 		window.location = 'index.php?pagina=home'
-
-	// 	</script>";
+	header("location:../../index.php?pagina=home&id=$iduser");
 
 }
 

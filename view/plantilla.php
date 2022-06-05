@@ -42,9 +42,17 @@
             {
               include_once"paginas/tarjeta.php";
             }
+            elseif ($_GET["pagina"]==="gnrTarjeta") 
+            {
+              include_once"paginas/gnrTarjeta.php";
+            }
             elseif ($_GET["pagina"]==="perfil") 
             {
               include_once"paginas/perfil.php";
+            }
+            elseif ($_GET["pagina"]==="perfilup") 
+            {
+              include_once"paginas/update_perfil.php";
             }
             elseif ($_GET["pagina"]==="transaccion") 
             {
