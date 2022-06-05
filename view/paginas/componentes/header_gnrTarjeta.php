@@ -1,6 +1,6 @@
-<?php  
-require_once('model/usuario.php');
+<?php
 $id=$_GET["id"];
+$bono=$_GET["bono"];
 ?>
 
 <header class="Header Header--home">

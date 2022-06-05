@@ -8,7 +8,7 @@
           class='form__container'
         >";?>
           <label for="tarjetas">
-            Seleccione una tarjeta
+            Seleccione una cuenta
             <select name="origen" id="tarjetas">
               <option value="">---- ---- ----</option>
               <?php 

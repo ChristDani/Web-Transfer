@@ -14,7 +14,7 @@
         {
 
             echo '<div class="Tarjeta__nuevo">';
-            echo "<a href='index.php?pagina=gnrTarjeta&id=".$id."' alt='Generar Tarjeta' title='Generar Tarjeta'>";
+            echo "<a href='index.php?pagina=gnrTarjeta&id=".$id."&bono=no' alt='Generar Tarjeta' title='Generar Tarjeta'>";
             echo "<p class='Tarjeta__datalle'>Agregar nueva tarjeta</p>";
             echo "</a>"; 
             echo "</div>";
@@ -35,7 +35,7 @@
         else 
         {
             echo '<div class="Tarjeta__nuevo">';
-            echo "<a href='index.php?pagina=gnrTarjeta&id=".$id."' alt='Generar Tarjeta' title='Generar Tarjeta'>";
+            echo "<a href='index.php?pagina=gnrTarjeta&id=".$id."&bono=si' alt='Generar Tarjeta' title='Generar Tarjeta'>";
             echo "<p class='Tarjeta__datalle'>Agregar nueva tarjeta</p>";
             echo "</a>"; 
             echo "</div>";

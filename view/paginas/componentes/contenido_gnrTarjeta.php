@@ -2,7 +2,7 @@
       <div class="form__container form__perfil">
         <h2 class="form__container__title">Generar tarjeta</h2>
         <?php echo"<form
-          action='controller/tarjeta/agregar.php?id=".$id."'
+          action='controller/tarjeta/agregar.php?id=".$id."&bono=".$bono."'
           method='post'
           class='form__container'
         >";?>
