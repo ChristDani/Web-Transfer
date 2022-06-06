@@ -18,8 +18,11 @@
     }
     elseif ($bono==="si") 
     {
-        
-        $monto=50;
+        if ($idtpmn==="2") {
+            $monto=50/3.8;
+        }else {
+            $monto=50;
+        }
         $consultas=new tarjeta();
         $consultas->insertarTarjetaBn($id,$clave,$idtpct,$idtpmn,$monto);
         
