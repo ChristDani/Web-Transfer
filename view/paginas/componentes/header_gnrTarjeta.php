@@ -5,7 +5,7 @@ $bono=$_GET["bono"];
 
 <header class="Header Header--home">
         <div class="l-container--row">
-            <h1 class="Header__logo"><img class="logo" src="view/img/logo.PNG"></h1>
+            <?php echo "<a href='index.php?pagina=home&id=".$id."' class='Header__logo'><img class='logo' src='view/img/logo.png'></a>";?>
             <div class="Header__menu" id="btn_nav">
                 <i class="fa-solid fa-bars"></i>
             </div>

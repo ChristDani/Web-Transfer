@@ -1,7 +1,7 @@
 
     <main class="Main l-container">
 
-      <table id="Table" class="Table">
+      <table id="Table" class="Table w-100">
         <thead class="Table__head">
           <tr>
             <th>Fecha</th>

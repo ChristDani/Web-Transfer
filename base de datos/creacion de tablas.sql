@@ -61,7 +61,7 @@ idtpct char(1) not null,
 idtpmn char(1) not null,
 nmrcta varchar(14) not null,
 nmrctait char(20) not null,
-monto smallmoney default 50.0,
+monto smallmoney default 0.0,
 fechaRgTrj smalldatetime default getdate(),
 
 constraint fk_iduser foreign key(iduser) references usuario(iduser),

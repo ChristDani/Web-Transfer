@@ -49,6 +49,23 @@ begin
 end 
 go
 
+-- tarjeta con bono --
+
+create procedure sp_trjBono
+@tnmrtj char(16),
+@tiduser char(9),
+@tclave char(4),
+@tidtpct char(1),
+@tidtpmn char(1),
+@tnmrcta char(14),
+@tnmrctait char(20),
+@tmonto smallmoney
+as
+begin
+	insert into tarjeta(nmrtj,iduser,clave,idtpct,idtpmn,nmrcta,nmrctait,monto) values(@tnmrtj,@tiduser,@tclave,@tidtpct,@tidtpmn,@tnmrcta,@tnmrctait,@tmonto)
+end 
+go
+
 -- actualización de usuario --
 
 create procedure sp_actualizar_usuario
@@ -101,5 +118,20 @@ declare @nmrctait char(20)
 set @nmrctait = dbo.Gennmrctait()
 print @nmrctait;
 exec sp_generarTrj @nmrtrj,'US0000001','8695','1','1',@nmrcta,@nmrctait
+
+select * from tarjeta
+
+-- tarjeta bono --
+
+declare @nmrtrj char(16)
+set @nmrtrj = dbo.Gennmrtrj()
+print @nmrtrj;
+declare @nmrcta char(14)
+set @nmrcta = dbo.Gennmrcta()
+print @nmrcta;
+declare @nmrctait char(20)
+set @nmrctait = dbo.Gennmrctait()
+print @nmrctait;
+exec sp_trjBono @nmrtrj,'US0000001','8695','1','1',@nmrcta,@nmrctait,20
 
 select * from tarjeta
