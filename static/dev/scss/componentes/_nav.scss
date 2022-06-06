@@ -29,7 +29,13 @@
         margin-left: 1rem;
     }
     &__link{
-        padding: 1rem 0;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        padding: 1rem 1.4rem;
+
+        &:hover {
+            background-color: rgba($textColorLight, .2);
+        }
     }
 
     .submenu {

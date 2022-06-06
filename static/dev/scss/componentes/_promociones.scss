@@ -5,29 +5,26 @@
     &__title {
         width: 100%;
         text-align: center;
-        padding: 4rem;
     }
 
     &__promocion {
-        background-color: $firstColor;
+        background: linear-gradient(90deg,$firstColor,$secondColor);
         height: 150px;
         text-align: center;
         font-size:1.5rem;
         color: $textColorLight;
         width: 100%;
-        line-height: 150px;
         margin-bottom: 2rem;
         text-transform: uppercase;
         border-radius: 20px;
         border: 6px dotted #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include from($medium) {
             width: 49%;
             height: 250px;
             font-size:1.8rem;
-            line-height: inherit;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
     }
 }

@@ -1,5 +1,5 @@
 .Header {
-  background-color: $firstColor;
+  background: linear-gradient(90deg, $firstColor, $secondColor);
   padding: 2rem;
   @include from($xlarge) {
     background-color: transparent;
@@ -42,7 +42,7 @@
     }
 
     .Informacion__title {
-      padding: 1rem;
+      
     }
   }
 }

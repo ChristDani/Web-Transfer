@@ -1,15 +1,16 @@
 .Tarjeta {
-  border: 4px solid #33376c;
-  background-color: #5962cd;
-  color: $textColorLight;
+  background-color: rgb(247, 247, 247);
+  box-shadow: rgba(0, 0, 0, 0.67) -1px 1px 11px -4px;
+  color: rgb(0, 0, 0);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   width: 15rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   &__nuevo {
-    border: 4px solid #33376c;
+    border: 4px solid $firstColor;
     color: #33376c;
     padding: 0.5rem 1rem;
     border-radius: 8px;

@@ -10,9 +10,10 @@ html{
 
 body {
     font-size: 16px;
-    background-color: #c8d9ff;
+    background-color: #fff;
     margin:0;
     color: rgb(36, 36, 36);
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -25,12 +26,14 @@ a {
     display: block;
     text-decoration: none;
     &:hover{
-        color: $textColor !important;
+        color: none !important;
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin:0;
+    font-family: 'Lato', sans-serif;
+    padding: 2rem 0;
 }
 
 input, button {
