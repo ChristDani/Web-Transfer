@@ -24,7 +24,10 @@
             width: 49%;
             height: 250px;
             font-size:1.8rem;
-            line-height: 250px;
+            line-height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
