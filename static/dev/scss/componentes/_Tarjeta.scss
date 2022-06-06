@@ -1,14 +1,16 @@
 .Tarjeta {
   border: 4px solid #33376c;
   background-color: #5962cd;
-  color:$textColorLight;
+  color: $textColorLight;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   width: 15rem;
+  display: flex;
+  align-items: center;
 
   &__nuevo {
     border: 4px solid #33376c;
-    color:#33376c;
+    color: #33376c;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     display: flex;
@@ -19,7 +21,6 @@
 .Informacion__tarjeta {
   display: flex;
   justify-content: space-around;
-
 }
 .Informacion__accion {
   margin-top: 2rem;
