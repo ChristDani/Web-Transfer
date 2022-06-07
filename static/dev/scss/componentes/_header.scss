@@ -30,6 +30,15 @@
     margin-top: 1.5rem;
     .Informacion__item{
       margin-top: 1.5rem;
+
+      h4 {
+        padding: 0;
+        margin-bottom: 1rem;
+      }
+
+      span {
+        font-size: 2rem;
+      }
     }
     .Informacion__cuenta{
       display: flex;
@@ -39,10 +48,6 @@
     }
     @include from($medium) {
       justify-content: space-between;
-    }
-
-    .Informacion__title {
-      
     }
   }
 }
