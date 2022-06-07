@@ -6,6 +6,8 @@
     position: absolute;
     width: 100%;
   }
+
+  
   &__logo {
     color: $textColor;
     &--formulario {
@@ -28,6 +30,11 @@
   &__bienvenida {
     text-align: center;
     margin-top: 1.5rem;
+
+    &__title {
+      font-size:4rem;
+      font-weight: bold;
+    }
     .Informacion__item{
       margin-top: 1.5rem;
 
