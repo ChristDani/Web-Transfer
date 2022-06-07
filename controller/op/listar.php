@@ -19,7 +19,7 @@
                     $mn="S/";
                 }
                 else {
-                    $mn="$";
+                    $mn="<i class='fa-solid fa-dollar-sign'></i>";
                 }
                 echo "<tr>";
                 $fecha=$fila[1]-> format('d/m/Y');
