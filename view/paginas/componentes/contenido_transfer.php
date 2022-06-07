@@ -30,6 +30,7 @@
             name="destino"
             id="destino"
             placeholder="Cuenta de destino"
+            maxlength="20" required oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
           />
           <label class="form__container__label"
           for="tarjetas">
@@ -45,6 +46,7 @@
             name="monto"
             id="monto"
             placeholder="Monto"
+            required
           />
           <input
             class="form__container__button"

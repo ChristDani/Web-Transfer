@@ -47,4 +47,37 @@
 
     }
 
+    function listarTarjD($id)
+    {
+
+        $consultas=new tarjeta();
+
+        $filas=$consultas->listarTarjetaD($id);
+
+
+        if ($filas != null) 
+        {
+
+            foreach ($filas as $fila) 
+            {
+                if ($fila[4]==="1") {
+                    $mn="S/";
+                }
+                else {
+                    $mn="<i class='fa-solid fa-dollar-sign'></i>";
+                }
+                $f=$fila[3]-> format('d/m/Y H:i:s');
+                $ct=$fila[0];
+                $ctit=$fila[1];
+                $m= number_format($fila[2],2);         
+            }
+            
+            echo "<p>Número de Cuenta: <span>$ct</span></p>";
+            echo "<p>Número de Cuenta Interbancaria: <span>$ctit</span></p>";
+            echo "<p>Monto: <span>$mn $m</span></p>";
+            echo "<p>Fecha de Registro: <span>$f</span></p>";
+        }
+
+    }
+
 ?>

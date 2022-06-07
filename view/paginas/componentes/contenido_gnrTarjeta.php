@@ -33,7 +33,7 @@
               type="text"
               name="clave"
               id="clave"
-              maxlength="6"
+              maxlength="4"
               required
               oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"
             />

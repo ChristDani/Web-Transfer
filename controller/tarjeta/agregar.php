@@ -13,7 +13,7 @@
         $consultas=new tarjeta();
         $consultas->insertarTarjeta($id,$clave,$idtpct,$idtpmn);
 
-	    header("location:../../index.php?pagina=home&id=$id");
+	    header("location:../../index.php?pagina=cTrj&id=$id");
 
     }
     elseif ($bono==="si") 
@@ -26,7 +26,7 @@
         $consultas=new tarjeta();
         $consultas->insertarTarjetaBn($id,$clave,$idtpct,$idtpmn,$monto);
         
-	    header("location:../../index.php?pagina=home&id=$id");
+	    header("location:../../index.php?pagina=Ctrj&id=$id");
 
     }
     

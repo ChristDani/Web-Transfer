@@ -73,6 +73,18 @@
             {
               include_once"paginas/transaccion.php";
             }
+            elseif ($_GET["pagina"]==="cT") 
+            {
+              include_once"paginas/confirmacion_transaccion.php";
+            }
+            elseif ($_GET["pagina"]==="cP") 
+            {
+              include_once"paginas/confirmacion_pagos.php";
+            }
+            elseif ($_GET["pagina"]==="cTrj") 
+            {
+              include_once"paginas/confirmacion_tarjeta.php";
+            }
             elseif ($_GET["pagina"]==="pagos") 
             {
               include_once"paginas/pagos.php";

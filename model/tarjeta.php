@@ -71,6 +71,23 @@ class tarjeta
         return $filas;
         
     }
+
+    public function listarTarjetaD($id)
+    {
+
+        $filas=null;
+        $model=new conexion();
+        $conexion=$model->conectar();
+        $sql="select top 1 nmrcta,nmrctait,monto,fechaRgTrj,idtpmn from tarjeta where iduser='$id' order by nmrtj desc";
+        $rscat=sqlsrv_query($conexion,$sql);
+        while($row=sqlsrv_fetch_array($rscat))
+        {
+            $filas[]=$row;
+        }
+        $conexion=$model->desconectar();
+        return $filas;
+        
+    }
     
 }
 

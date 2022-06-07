@@ -51,6 +51,7 @@
             name="monto"
             id="monto"
             placeholder="Monto"
+            required
           />
           <input
             class="form__container__button"

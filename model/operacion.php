@@ -36,6 +36,23 @@ class op
         
     }
 
+    public function listarOperacionC()
+    {
+
+        $filas=null;
+        $model=new conexion();
+        $conexion=$model->conectar();
+        $sql="SELECT top 1 o.fechaOp,o.origen,o.destino,o.monto,t.nombre,o.idtpmn FROM operaciones as o inner join tipo_op as t on t.idtpop=o.idtpop order by idop desc";
+        $rscat=sqlsrv_query($conexion,$sql);
+        while($row=sqlsrv_fetch_array($rscat))
+        {
+            $filas[]=$row;
+        }
+        $conexion=$model->desconectar();
+        return $filas;
+        
+    }
+
 }
 
 ?>

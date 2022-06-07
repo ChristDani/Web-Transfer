@@ -12,5 +12,10 @@
     $consultas=new op();
     $consultas->insertarOperacion($idtpop,$origen,$destino,$idtpmn,$monto);
 
-	header("location:../../index.php?pagina=home&id=$id");
+    if ($idtpop==="2") {
+        header("location:../../index.php?pagina=cT&id=$id");
+    }else {
+        header("location:../../index.php?pagina=cP&id=$id");
+    }
+	
 ?>
