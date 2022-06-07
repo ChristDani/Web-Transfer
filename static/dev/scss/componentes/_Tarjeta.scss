@@ -21,10 +21,10 @@
 }
 .Informacion__tarjeta {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 
   @include from($medium) {
+    flex-direction: row;
     justify-content: space-around;
   }
   
