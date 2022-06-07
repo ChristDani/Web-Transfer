@@ -1,5 +1,5 @@
 
-    <main class="Main l-container">
+    <main class="Main l-container Table">
 
       <table id="Table" class="Table w-100">
         <thead class="Table__head">

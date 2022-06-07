@@ -50,7 +50,7 @@ if ($lista!=null) {
       </div>
       <div class="Header__bienvenida">
         <div>
-          <h2>HOLA <?php echo "! '$nombre'";?>¿QUE HAREMOS HOY?</h2>
+          <h1 class="Header__bienvenida__title">Hola! <?php echo "$nombre,";?> ¿Qué haremos hoy?</h1>
         </div>
       </div>
     </header>

@@ -12,7 +12,7 @@
     <div class='Promociones'>
         <h2 class='Promociones__title'>Promociones del mes</h2>
         <div class='Promociones__promocion'>
-            Crea tu primera tarjeta ahora y recibe un bono de 50 Soles
+            Crea tu primera tarjeta de debito ahora y recibe un bono de S/50 Soles
         </div>
         <div class='Promociones__promocion'>
             Compra tu soat con el 20% de descuento si te afilias con nosotros

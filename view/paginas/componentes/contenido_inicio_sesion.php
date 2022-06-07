@@ -1,7 +1,7 @@
 <main class="Main--register">
     <div class="Imagen"></div>
     <div class="form__container">
-        <a href="index.php" class="Header__logo--formulario"><img class="logo" src="view/img/logo.png" alt=""></a>
+        <a href="index.php" class="Header__logo--formulario"><img class="logo" src="view/img/logon.png" alt=""></a>
         <h2 class="form__container__title">Inicio de Sesion</h2>
         <form action="controller/acceso/login.php" method="post" class="form__container">
 

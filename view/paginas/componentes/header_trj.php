@@ -19,7 +19,7 @@ if ($filas != null)
             $mn="S/";
         }
         else {
-            $mn="$";
+            $mn="<i class='fa-solid fa-dollar-sign'></i>";
         }
         $cta=$fila[0];
         $ctait=$fila[1];
@@ -58,7 +58,7 @@ if ($filas != null)
         </nav>
       </div>
       <div class="Header__bienvenida">
-        <div class="Informacion__tarjeta">
+        <div class="Informacion__tarjeta l-container">
           <div class="Informacion__item">
             <h4>Saldo:</h4>
             <span><?php echo "$mn $saldo"; ?></span>

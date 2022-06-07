@@ -25,7 +25,7 @@
                     $mn="S/";
                 }
                 else {
-                    $mn="$";
+                    $mn="<i class='fa-solid fa-dollar-sign'></i>";
                 }
                 $saldo= number_format($fila[7],2);
                 echo '<div class="Tarjeta">';
