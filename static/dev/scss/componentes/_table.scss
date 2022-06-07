@@ -1,5 +1,10 @@
 .Table{
     margin-top: 4rem;
+    overflow-y: scroll;
+
+    @include from($medium){
+        overflow-y: initial;
+    }
     &__head{
         background-color: $firstColor;
         color: $textColorLight;

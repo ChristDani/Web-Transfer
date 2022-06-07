@@ -21,7 +21,13 @@
 }
 .Informacion__tarjeta {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include from($medium) {
+    justify-content: space-around;
+  }
+  
 }
 .Informacion__accion {
   margin-top: 2rem;
